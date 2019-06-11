@@ -1,0 +1,6 @@
+[submodule "php7/swoole"]
+	path = php7/swoole
+	url = https://github.com/swoole/swoole-src.git
+[submodule "php7/cphalcon"]
+	path = php7/cphalcon
+	url = https://github.com/phalcon/cphalcon.git
