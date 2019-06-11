@@ -1,0 +1,22 @@
+app:
+  period:
+    - 2019-06-03 15:00:00|2019-06-03 15:59:59
+    - 2019-06-03 16:00:00|2019-06-03 16:59:59
+    - 2019-06-03 17:00:00|2019-06-03 17:59:59
+    - 2019-06-03 18:00:00|2019-06-03 18:59:59
+    - 2019-06-03 19:00:00|2019-06-03 19:59:59
+    - 2019-06-03 20:00:00|2019-06-03 20:59:59
+    - 2019-06-03 21:00:00|2019-06-03 21:59:59
+database:
+  nebulasio:
+    host: 192.168.99.1
+    username: root
+    password: 111111
+    dbname: nebulasio
+    port: 3306
+    charset: utf8mb4
+neb:
+  provider: https://mainnet.nebulas.io
+  vote_contract: n1pADU7jnrvpPzcWusGkaizZoWgUywMRGMY
+  vote_nat_contract: n1hPqsHFNvSKjcCrzQFsxnV5YGkmwyDUWhq
+  support_nas_contract: n1xWYSZ9tz5ZSSJZuGh8e6AnXKWTuSBLKEX

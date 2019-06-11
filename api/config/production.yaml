@@ -1,0 +1,27 @@
+app:
+  period:
+    - 2019-06-04 15:00:00|2019-06-10 14:59:59
+    - 2019-06-10 15:00:00|2019-06-17 14:59:59
+    - 2019-06-17 15:00:00|2019-06-24 14:59:59
+    - 2019-06-24 15:00:00|2019-07-01 14:59:59
+    - 2019-07-01 15:00:00|2019-07-07 14:59:59
+  log:
+  crontab:
+    sync:
+      schedule: "*/5 * * * *"
+      handler: sync
+      action: stat
+      log: true
+database:
+  nebulasio:
+    host: mysql
+    username: root
+    password: Mdwstgae3226
+    dbname: nebulasio
+    port: 3306
+    charset: utf8mb4
+neb:
+  provider: https://mainnet.nebulas.io
+  vote_contract: n1pADU7jnrvpPzcWusGkaizZoWgUywMRGMY
+  vote_nat_contract: n1hPqsHFNvSKjcCrzQFsxnV5YGkmwyDUWhq
+  support_nas_contract: n1xWYSZ9tz5ZSSJZuGh8e6AnXKWTuSBLKEX
