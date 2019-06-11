@@ -21,24 +21,28 @@ php7: files for building php7 docker image
 
 Dockerfile: file for building project docker image
 
+* Step 1: git colne
 
-* Step 1: build PHP7 docker image
+        cd [root_path]
+
+        git submodule update --init
+
+* Step 2: build PHP7 docker image
 
         cd [root_path]/php7
     
         docker build -t php7:nebulas .
 
-* Step 2: build project docker image
+* Step 3: build project docker image
     
         cd [root_path]
     
         docker build -t nebulas:[version] .
 
-* Step 3: run container by project image
+* Step 4: run container by project image
 
         docker run --name nebulas -p [your port]:8080 nebulas -d nebulas:[version] crontab env=[enviroment]
     
     * [enviroment] can be "production", "ready" or "dev", default "production", that means the project uses which config file ([root_path]/api/config)
     
     * you can edit any file in path [root_path]/api/config and make adjustments as needed
-    
